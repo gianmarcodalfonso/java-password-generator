@@ -8,12 +8,14 @@ public class PasswordGenerator {
     
     String name = "Alberto";
     String surname = "Sveglia";
-    int favColor = 010101;
+    String favColor = "blue";
     byte dayOfBirth = 15;
     byte monthOfBirth = 8;
     short yearOfBirth = 1996;
     char separator = '-';
+    int birthSum = dayOfBirth + monthOfBirth + yearOfBirth;
 
-    
+    System.out.println("Ho un utente che si chiama " + name + surname + ", nato il " + dayOfBirth + separator + monthOfBirth + separator + yearOfBirth + ", e il suo colore preferito è " + favColor);
+    System.out.println("La sua password sarà: " + name + separator + surname + separator + favColor + separator + birthSum);
   }
 }
